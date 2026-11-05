@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>TERMO</h1>
+  <p id="info"></p>
+
+  <div id="tabuleiro"></div>
+
+  <form id="formulario">
+    <input type="text" id="chute" placeholder="Digite a palavra" autocomplete="off" aria-label="Sua tentativa">
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p id="mensagem"></p>
+  <button id="jogar-novamente" type="button" hidden>Jogar novamente</button>
+
+  <div class="legenda">
+    <p><span class="quadrado certa"></span> Letra na posição correta</p>
+    <p><span class="quadrado lugar-errado"></span> Letra existe, mas em outra posição</p>
+    <p><span class="quadrado nao-existe"></span> Letra não existe na palavra</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
